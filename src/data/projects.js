@@ -5,7 +5,7 @@ export const projects = [
       title: "LET'S HASH ONLINE",
       date: "June 2024",
       description:
-        "Web base solution for calculating file and text hashes quickly and easily. Whether you need to verify file integrity or text integrity, this user-friendly website provides accurate and reliable hash calculations for all your needs.",
+        "A web base solution for calculating large files and text hashes quickly and easily. Whether you need to verify file integrity or text integrity, this user-friendly website provides accurate and reliable hash calculations for all your needs.",
       imageC:
         "https://github.com/Senal-Punsara/logos/blob/main/lesthashonline.png?raw=true",
       image:

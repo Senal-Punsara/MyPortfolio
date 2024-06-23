@@ -86,9 +86,34 @@ export const GitHubButton = styled.a`
   font-weight: 500;
   text-decoration: none;
   font-size: 16px;
+  margin-right: 15px;
   transition: all 0.6s ease-in-out;
     :hover {
       background: ${({ theme }) => theme.primary};
+      color: ${({ theme }) => theme.white};     
+    }
+    @media screen and (max-width: 768px) { 
+    font-size: 14px;
+    }
+`;
+
+export const LinkedInButton = styled.a`
+  border: 1.8px solid #0e76a8;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 70%;
+  border-radius: 20px;
+  color: #0e76a8;
+  cursor: pointer;
+  padding: 0 20px;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 16px;
+  margin-right: 15px;
+  transition: all 0.6s ease-in-out;
+    :hover {
+      background: #0e76a8;
       color: ${({ theme }) => theme.white};     
     }
     @media screen and (max-width: 768px) { 
