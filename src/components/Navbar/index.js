@@ -16,7 +16,7 @@ import {
 } from "./NavbarStyledComponent";
 import { DiCssdeck } from "react-icons/di";
 import { FaBars } from "react-icons/fa";
-import { Bio } from "../../data/constants";
+import { Bio } from "../../data/Bio";
 import { Close, CloseRounded } from "@mui/icons-material";
 import { useTheme } from "styled-components";
 
@@ -58,7 +58,7 @@ const Navbar = () => {
           <GitHubButton href={Bio.github} target="_blank">
             Github
           </GitHubButton>
-          <LinkedInButton href={Bio.github} target="_blank">
+          <LinkedInButton href={Bio.linkedin} target="_blank">
             LinkedIn
           </LinkedInButton>
         </ButtonContainer>
@@ -131,7 +131,7 @@ const Navbar = () => {
                 color: "white",
                 width: "max-content",
               }}
-              href={Bio.github}
+              href={Bio.linkedin}
               target="_blank"
             >
               LinkedIn
