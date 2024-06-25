@@ -16,7 +16,7 @@ import {
 } from "./NavbarStyledComponent";
 import { DiCssdeck } from "react-icons/di";
 import { FaBars } from "react-icons/fa";
-import { Bio } from "../../data/constants";
+import { Bio } from "../../data/Bio";
 import { Close, CloseRounded } from "@mui/icons-material";
 import { useTheme } from "styled-components";
 
@@ -36,7 +36,7 @@ const Navbar = () => {
               cursor: "pointer",
             }}
           >
-            <DiCssdeck size="3rem" /> <Span>Portfolio</Span>
+            <DiCssdeck size="3rem" /> <Span>Senal Punsara</Span>
           </a>
         </NavLogo>
         <MobileIcon>
@@ -52,13 +52,14 @@ const Navbar = () => {
           <NavLink href="#skills">Skills</NavLink>
           <NavLink href="#projects">Projects</NavLink>
           <NavLink href="#education">Education</NavLink>
+          <NavLink href="#awards">Awards</NavLink>
           <NavLink href="#contact">Contact</NavLink>
         </NavItems>
         <ButtonContainer>
           <GitHubButton href={Bio.github} target="_blank">
             Github
           </GitHubButton>
-          <LinkedInButton href={Bio.github} target="_blank">
+          <LinkedInButton href={Bio.linkedin} target="_blank">
             LinkedIn
           </LinkedInButton>
         </ButtonContainer>
@@ -105,6 +106,14 @@ const Navbar = () => {
               Education
             </MobileLink>
             <MobileLink
+              href="#awards"
+              onClick={() => {
+                setIsOpen(!isOpen);
+              }}
+            >
+              Awards
+            </MobileLink>
+            <MobileLink
               href="#contact"
               onClick={() => {
                 setIsOpen(!isOpen);
@@ -115,8 +124,6 @@ const Navbar = () => {
             <GitHubButton
               style={{
                 padding: "10px 16px",
-                background: `${theme.primary}`,
-                color: "white",
                 width: "max-content",
               }}
               href={Bio.github}
@@ -127,11 +134,9 @@ const Navbar = () => {
             <LinkedInButton
               style={{
                 padding: "10px 16px",
-                background: "#0e76a8",
-                color: "white",
                 width: "max-content",
               }}
-              href={Bio.github}
+              href={Bio.linkedin}
               target="_blank"
             >
               LinkedIn

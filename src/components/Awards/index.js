@@ -7,8 +7,8 @@ import TimelineSeparator from '@mui/lab/TimelineSeparator';
 import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
-import ExperienceCard from '../Cards/ExperienceCard';
-import { experiences } from '../../data/experiances';
+import { awards } from '../../data/awards';
+import AwardCard from '../Cards/AwardsCard';
 
 const Container = styled.div`
     display: flex;
@@ -76,22 +76,22 @@ const TimelineSection = styled.div`
 
 const index = () => {
     return (
-        <Container id="experience">
+        <Container id="awards">
             <Wrapper>
-                <Title>Experience</Title>
+                <Title>Awards</Title>
                 {/* <Desc>
                     My work experience as a software engineer and working on different companies and projects.
                 </Desc> */}
                 <TimelineSection>
                     <Timeline>
-                        {experiences.map((experience,index) => (
+                        {awards.map((award,index) => (
                             <TimelineItem>
                                 <TimelineSeparator>
                                     <TimelineDot variant="outlined" color="secondary" />
-                                    {index !== experiences.length && <TimelineConnector style={{ background: '#854CE6' }} />}
+                                    {index !== award.length && <TimelineConnector style={{ background: '#854CE6' }} />}
                                 </TimelineSeparator>
                                 <TimelineContent sx={{ py: '12px', px: 2 }}>
-                                    <ExperienceCard experience={experience}/>
+                                    <AwardCard award={award}/>
                                 </TimelineContent>
                             </TimelineItem>
                         ))}
@@ -103,4 +103,4 @@ const index = () => {
     )
 }
 
-export default index
+export default index;
