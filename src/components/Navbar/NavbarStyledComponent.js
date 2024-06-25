@@ -52,7 +52,7 @@ export const NavItems = styled.ul`
     padding: 0 6px;
     list-style: none;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1100px) {
       display: none;
     }
 `;
@@ -111,6 +111,7 @@ export const LinkedInButton = styled.a`
   text-decoration: none;
   font-size: 16px;
   margin-right: 15px;
+  
   transition: all 0.6s ease-in-out;
     :hover {
       background: #0e76a8;
@@ -128,15 +129,17 @@ export const ButtonContainer = styled.div`
   justify-content: end;
   align-items: center;
   padding: 0 6px;
-  @media screen and (max-width: 768px) {
+  
+  @media screen and (max-width: 1100px) {
     display: none;
+    
   }
 `;
 
 
 export const MobileIcon = styled.div`
   display: none;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1100px) {
     display: block;
     position: absolute;
     top: 0;
