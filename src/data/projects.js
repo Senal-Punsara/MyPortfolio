@@ -134,7 +134,7 @@ export const projects = [
     {
       id: 2,
       title: "Care Plus",
-      date: "May 2024",
+      date: "Sep 2022 - Oct 2022",
       description:
         "This mobile application, developed using Flutter, allows users to calculate their BMI (Body Mass Index) by entering their height and weight. Additionally, the app can save records of previously calculated BMI values. A unique feature of the app is the ability to enter symptoms and receive possible diseases with detailed descriptions based on those symptoms.",
       image:
@@ -167,7 +167,7 @@ export const projects = [
     {
       id: 1,
       title: "Entero",
-      date: "Mar 2021 - Mar 2022",
+      date: "Apr 2022 - Oct 2022",
       description:
         "Entero is a web-based platform for event management which facilitates and satisfies the users towards various services. System Entero assists the service providers to reach and promote their business as well as customers to fulfill their needed services through this single system.",
       image:
@@ -236,7 +236,7 @@ export const projects = [
       date: "Mar 2021 - Mar 2022",
       description:
         "Construct360 is a construction management system, which is a web-based platform seamlessly connecting customers, contractors, and landscape designers. This solution empowers customers to take control of their construction projects without the need to be physically present at the site. Additionally, If customers need any construction materials, they can easily order the relevant items on the same platform.",
-      image: "https://github.com/Senal-Punsara/logos/blob/main/construct360logo.png?raw=true",
+      image: "https://github.com/Senal-Punsara/logos/blob/main/construct360.png?raw=true",
       imageC: "https://github.com/Senal-Punsara/logos/blob/main/construct360logo.png?raw=true",
       tags: ["HTML 5", "CSS 3", "JavaScript", "Jakarta EE", "MySQL"],
       category: "web app",
