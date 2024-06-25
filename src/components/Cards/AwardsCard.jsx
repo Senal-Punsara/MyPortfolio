@@ -12,20 +12,6 @@ const Document = styled.img`
     opacity: 0.8;
   }
 `;
-const Wrapper = styled.div`
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  max-width: 1350px;
-  padding-top: 30px;
-  gap: 12px;
-  @media (max-width: 960px) {
-    flex-direction: column;
-  }
-`;
 
 const Description = styled.div`
   width: 100%;
@@ -54,7 +40,7 @@ const Card = styled.div`
   padding: 12px 16px;
   justify-content: space-between;
   position: relative;
-  // overflow: hidden;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -104,7 +90,7 @@ const Body = styled.div`
   flex-direction: column;
 `;
 
-const Name = styled.div`
+const Achivment = styled.div`
   font-size: 18px;
   font-weight: 600;
   color: ${({ theme }) => theme.text_primary + 99};
@@ -113,7 +99,7 @@ const Name = styled.div`
   }
 `;
 
-const Degree = styled.div`
+const Organizer = styled.div`
   font-size: 14px;
   font-weight: 500;
   color: ${({ theme }) => theme.text_secondary + 99};
@@ -131,89 +117,64 @@ const Date = styled.div`
   }
 `;
 
-const Grade = styled.div`
-  font-size: 14px;
-  font-weight: 500;
-  color: ${({ theme }) => theme.text_secondary + 99};
-  @media only screen and (max-width: 768px) {
-    font-size: 12px;
-  }
+const Skills = styled.div`
+  width: 100%;
+  display: flex;
+  gap: 12px;
+  margin-top: -10px;
 `;
 
-const ExamTitle = styled.li`
-  font-size: 16px;
-  font-weight: 500;
-  margin-left: 20px;
-  margin-top: 10px;
-  color: ${({ theme }) => theme.text_secondary + 99};
-  @media only screen and (max-width: 768px) {
-    font-size: 12px;
-  }
+const ItemWrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 `;
 
-const ExamSubTitle = styled.p`
-  font-size: 14px;
-  margin-left: 20px;
-  font-weight: 500;
-  color: ${({ theme }) => theme.text_secondary + 99};
-  @media only screen and (max-width: 768px) {
-    font-size: 10px;
-  }
-`;
-
-const ExamSubject = styled.li`
-  font-size: 14px;
-  margin-left: 40px;
+const Skill = styled.div`
+  font-size: 15px;
   font-weight: 400;
-  color: ${({ theme }) => theme.text_secondary + 99};
+  color: ${({ theme }) => theme.text_primary + 99};
   @media only screen and (max-width: 768px) {
-    font-size: 10px;
+    font-size: 12px;
   }
 `;
 
-const EducationCard = ({ education }) => {
+const AwardCard = ({ award }) => {
   return (
     <Card>
       <Top>
-        <Image src={education.img} />
+        <Image src={award.img} />
         <Body>
-          <Name>{education.school}</Name>
-          <Degree>{education.degree}</Degree>
-          <Date>{education.date}</Date>
+          <Achivment>{award.achivment}</Achivment>
+          <Organizer>{award.organizer}</Organizer>
+          <Date>{award.date}</Date>
         </Body>
       </Top>
-      {education.gpa && (
-        <Grade>
-          <b>GPA: </b>
-          {education.gpa}
-        </Grade>
-      )}
-       
-      {education.exams?.map((item) => (
-        
-        <ul>
-          <ExamTitle>
-            <b>{item.name}</b>
-          </ExamTitle>
-          <ExamSubTitle>
-            <b> {item.stream}</b>
-          </ExamSubTitle>
-          <ExamSubTitle>
-            <b> Results :</b>
-          </ExamSubTitle>
-          <ul>
-            {item.results?.map((subject)=>(
-                <ExamSubject>{subject.subjectName} - {subject.result}</ExamSubject>
-            ))}
-          </ul>
-        </ul>
-      ))}
+      {/* <Description>
+                {award?.desc &&
+                    <Span>{award?.desc}</Span>
 
-     <Description>
-        <Span>{education.desc}</Span>
-      </Description>
+                }
+                {award?.skills &&
+                    <>
+                        <br />
+                        <Skills>
+                            <b>Skills:</b>
+                            <ItemWrapper>
+                                {award?.skills?.map((skill, index) => (
+                                    <Skill>• {skill}</Skill>
+                                ))}
+                            </ItemWrapper>
+                        </Skills>
+                    </>
+                }
+            </Description> */}
+
+      <a href={award.credential} target="new" style={{paddingLeft:"10px", color:"#0A66C2"}}>
+        Show Credential
+      </a>
     </Card>
   );
 };
 
-export default EducationCard;
+export default AwardCard;
