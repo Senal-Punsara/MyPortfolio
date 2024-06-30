@@ -16,7 +16,7 @@ export const experiences = [
         "Git",
         "GitHub",
       ],
-      doc: "https://drive.google.com/file/d/1oI-MSP1qzHodaTmOfzbhvWSGAjgJjPAI/view?usp=sharing",
+      doc: "",
     },
     
   ];
