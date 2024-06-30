@@ -174,11 +174,11 @@ const ExperienceCard = ({ experience }) => {
                     </>
                 }
             </Description>
-            {experience.doc &&
+            {/* {experience.doc &&
                 <a href={experience.doc} target="new">
                     Completion Letter
                 </a>
-            }
+            } */}
         </Card>
     )
 }
