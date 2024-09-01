@@ -182,10 +182,10 @@ const EducationCard = ({ education }) => {
           <Date>{education.date}</Date>
         </Body>
       </Top>
-      {education.gpa && (
+      {education.grade && (
         <Grade>
-          <b>GPA: </b>
-          {education.gpa}
+          <b>Grade: </b>
+          {education.grade}
         </Grade>
       )}
        
