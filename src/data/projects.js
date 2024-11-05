@@ -13,7 +13,7 @@ export const projects = [
       tags: ["React", "Material UI", "Choreo"],
       category: "software",
       github: "https://github.com/Senal-Punsara/lets-hash-online",
-      webapp: "https://letshashonline.choreoapps.dev/",
+      webapp: "https://letshashonline.ne.choreoapps.dev/",
       hasWebLink: 1,
       moreDetails: [
         {
